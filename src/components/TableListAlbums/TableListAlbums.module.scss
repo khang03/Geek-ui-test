@@ -1,0 +1,83 @@
+.table-list {
+    .head-table {
+        width: 100%;
+        display: flex;
+        height: 50px;
+        background-color: rgba(213, 213, 213, 0.322);
+
+        .head-title {
+            height: 100%;
+            align-content: center;
+            padding-left: 20px;
+            font-weight: 500;
+            position: relative;
+        }
+        .head-title::before {
+            content: "";
+            position: absolute;
+            height: 50%;
+            width: 1px;
+            background-color: rgb(205, 205, 205);
+            left: 0px;
+        }
+        .title-id::before {
+            width: 0;
+        }
+        .title-id {
+            width: 7%;
+        }
+        .title {
+            width: 55%;
+        }
+        .title-user {
+            width: 25%;
+        }
+        .title-action {
+            width: 13%;
+        }
+    }
+    .albums {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        .album-item {
+            height: 100%;
+            align-content: center;
+            padding-left: 20px;
+            a {
+                text-decoration: none;
+                color: #279e96;
+            }
+            a:hover {
+                color: #289790e0;
+                text-shadow: 0px 0px 2px #279e96;
+            }
+        }
+        .albums-id {
+            width: 7%;
+        }
+        .albums-title {
+            width: 55%;
+        }
+        .albums-user {
+            width: 25%;
+            display: grid;
+            grid-template-columns: 3fr 7fr;
+            height: 100%;
+            align-items: center;
+            img {
+                width: 40px;
+                border-radius: 50%;
+            }
+        }
+        .albums-user:hover {
+            cursor: pointer;
+        }
+        .albums-action {
+            width: 13%;
+        }
+    }
+    .albums:hover {
+        box-shadow: 0px 0px 5px #c4c4c4;
+    }
+}

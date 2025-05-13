@@ -1,0 +1,86 @@
+.table-list {
+    .head-table {
+        width: 100%;
+        display: flex;
+        height: 50px;
+        background-color: rgba(213, 213, 213, 0.322);
+
+        .head-title {
+            height: 100%;
+            align-content: center;
+            padding-left: 20px;
+            font-weight: 500;
+            position: relative;
+        }
+        .head-title::before {
+            content: "";
+            position: absolute;
+            height: 50%;
+            width: 1px;
+            background-color: rgb(205, 205, 205);
+            left: 0px;
+        }
+        .title-id::before {
+            width: 0;
+        }
+        .title-id {
+            width: 5%;
+        }
+        .title-avatar {
+            width: 8%;
+        }
+        .title-name,
+        .title-email,
+        .title-phone {
+            width: 21%;
+        }
+        .title-website,
+        .title-action {
+            width: 12%;
+        }
+    }
+
+    .users {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        .user-item {
+            height: 100%;
+            align-content: center;
+            padding-left: 20px;
+            a {
+                text-decoration: none;
+                color: #279e96;
+            }
+            a:hover {
+                color: #289790e0;
+                text-shadow: 0px 0px 2px #279e96;
+            }
+        }
+
+        .user-id {
+            width: 5%;
+        }
+        .user-avatar {
+            width: 8%;
+            img {
+                border-radius: 50%;
+                width: 40px;
+            }
+        }
+
+        .user-name,
+        .user-email,
+        .user-phone {
+            width: 21%;
+        }
+
+        .user-website,
+        .user-action {
+            width: 12%;
+        }
+    }
+    .users:hover {
+        box-shadow: 0px 0px 5px #c4c4c4;
+    }
+}
